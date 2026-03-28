@@ -25,7 +25,7 @@ export function CaptureScreen() {
       id: "voice",
       label: "Voice",
       icon: Mic,
-      color: "from-cyan-400 to-blue-500",
+      color: "from-amber-600 to-orange-700",
       route: "/recording",
       angle: 0,
     },
@@ -33,7 +33,7 @@ export function CaptureScreen() {
       id: "note",
       label: "Note",
       icon: FileText,
-      color: "from-purple-400 to-pink-500",
+      color: "from-stone-600 to-amber-700",
       route: "/note?category=NOTE",
       angle: 60,
     },
@@ -41,7 +41,7 @@ export function CaptureScreen() {
       id: "now",
       label: "NOW",
       icon: Zap,
-      color: "from-red-500 to-orange-500",
+      color: "from-orange-600 to-red-700",
       route: "/note?category=NOW",
       angle: 120,
     },
@@ -49,7 +49,7 @@ export function CaptureScreen() {
       id: "later",
       label: "LATER",
       icon: Clock,
-      color: "from-gray-400 to-gray-600",
+      color: "from-stone-500 to-stone-700",
       route: "/note?category=LATER",
       angle: 180,
     },
@@ -57,7 +57,7 @@ export function CaptureScreen() {
       id: "brain",
       label: "Brain Dump",
       icon: Brain,
-      color: "from-pink-400 to-purple-600",
+      color: "from-teal-700 to-emerald-800",
       route: "/note?category=BRAIN",
       angle: 240,
     },
@@ -65,7 +65,7 @@ export function CaptureScreen() {
       id: "tasks",
       label: "View Tasks",
       icon: ListChecks,
-      color: "from-yellow-400 to-amber-600",
+      color: "from-yellow-700 to-amber-800",
       route: "/tasks",
       angle: 300,
     },
@@ -145,11 +145,11 @@ export function CaptureScreen() {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-red-950 via-orange-900 to-gray-900">
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-amber-950 via-stone-900 to-neutral-900">
       {/* Gradient mesh background */}
       <div className="absolute inset-0 opacity-60">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-pink-500 to-orange-500 rounded-full blur-3xl opacity-40" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-orange-700 to-amber-600 rounded-full blur-3xl opacity-40" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-teal-700 to-emerald-700 rounded-full blur-3xl opacity-30" />
       </div>
 
       {/* Content */}
@@ -162,7 +162,7 @@ export function CaptureScreen() {
         >
           {/* Logo/Title */}
           <div className="text-center mb-4">
-            <h1 className="text-6xl mb-2 bg-gradient-to-r from-cyan-300 via-pink-300 to-purple-300 bg-clip-text text-transparent">
+            <h1 className="text-6xl mb-2 bg-gradient-to-r from-amber-400 via-orange-300 to-yellow-400 bg-clip-text text-transparent">
               Bloom
             </h1>
             <p className="text-white/60 text-sm">Calm control in chaos</p>
@@ -239,7 +239,7 @@ export function CaptureScreen() {
               whileTap={{ scale: 0.9 }}
               className="relative cursor-pointer touch-none"
             >
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 via-pink-400 to-purple-400 backdrop-blur-xl flex items-center justify-center shadow-2xl shadow-pink-500/50 border border-white/20">
+              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-500 backdrop-blur-xl flex items-center justify-center shadow-2xl shadow-amber-500/50 border border-white/20">
                 {/* Inner glow */}
                 <div className="absolute inset-4 rounded-full bg-gradient-to-br from-white/20 to-transparent" />
 
@@ -264,7 +264,7 @@ export function CaptureScreen() {
                   opacity: isBloomActive ? 0.8 : 0.4,
                   scale: isBloomActive ? 1.3 : 1,
                 }}
-                className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400 via-pink-400 to-purple-400 blur-2xl -z-10"
+                className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-500 blur-2xl -z-10"
               />
             </motion.div>
           </div>

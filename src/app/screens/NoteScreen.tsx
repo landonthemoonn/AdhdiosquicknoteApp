@@ -25,22 +25,22 @@ export function NoteScreen() {
   const getCategoryColor = () => {
     switch (category) {
       case "NOW":
-        return "from-red-500 to-orange-500";
+        return "from-orange-600 to-red-700";
       case "LATER":
-        return "from-gray-400 to-gray-600";
+        return "from-stone-500 to-stone-700";
       case "BRAIN":
-        return "from-pink-400 to-purple-600";
+        return "from-teal-700 to-emerald-800";
       default:
-        return "from-purple-400 to-pink-500";
+        return "from-stone-600 to-amber-700";
     }
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-red-950 via-orange-900 to-gray-900">
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-amber-950 via-stone-900 to-neutral-900">
       {/* Gradient mesh background */}
       <div className="absolute inset-0 opacity-60">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-pink-500 to-orange-500 rounded-full blur-3xl opacity-40" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-30" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-orange-700 to-amber-600 rounded-full blur-3xl opacity-40" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-teal-700 to-emerald-700 rounded-full blur-3xl opacity-30" />
       </div>
 
       {/* Content */}
