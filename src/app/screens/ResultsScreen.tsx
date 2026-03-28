@@ -12,15 +12,8 @@ interface ActionItem {
 export function ResultsScreen() {
   const navigate = useNavigate();
 
-  const actions: ActionItem[] = [
-    { id: "1", text: "Call the client about project deadline", category: "NOW" },
-    { id: "2", text: "Check if the reports are ready", category: "NOW" },
-    { id: "3", text: "Remind Sarah about the meeting", category: "NEXT" },
-    { id: "4", text: "Follow up on email responses", category: "NEXT" },
-    { id: "5", text: "Review quarterly goals", category: "LATER" },
-    { id: "6", text: "Schedule team retrospective", category: "LATER" },
-    { id: "7", text: "Client seemed stressed about timeline", category: "NOTE" },
-  ];
+  // Empty state - ready for real data from API/database
+  const actions: ActionItem[] = [];
 
   const getCategoryIcon = (category: string) => {
     switch (category) {

@@ -18,20 +18,14 @@ export function ExpandedView() {
   const { id } = useParams();
   const [showTranscript, setShowTranscript] = useState(false);
 
-  // Mock data - in real app this would be fetched based on id
+  // Empty state - ready for real data from API/database
   const capture = {
     id,
-    summary:
-      "You need to contact the client about the project deadline tomorrow, remind Sarah about the upcoming meeting, and verify that the reports are ready for review.",
-    transcript:
-      "I need to call the client about the project deadline tomorrow also remind Sarah about the meeting and check if the reports are ready",
-    actions: [
-      "Call the client about project deadline",
-      "Remind Sarah about the meeting",
-      "Check if the reports are ready",
-    ],
-    pattern: "Recurring issue detected: Multiple deadlines mentioned in last 3 captures",
-    timestamp: "2 minutes ago",
+    summary: "",
+    transcript: "",
+    actions: [],
+    pattern: "",
+    timestamp: "",
   };
 
   const actionButtons = [

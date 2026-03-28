@@ -12,37 +12,10 @@ export function RecordingScreen() {
   // Auto-start recording when component mounts
   useEffect(() => {
     setIsRecording(true);
+    // TODO: Integrate real audio recording API here
   }, []);
 
-  // Simulate live transcription
-  useEffect(() => {
-    const words = [
-      "I need to",
-      "call the client",
-      "about the project",
-      "deadline tomorrow",
-      "also remind",
-      "Sarah about",
-      "the meeting",
-      "and check",
-      "if the reports",
-      "are ready",
-    ];
-
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < words.length) {
-        setTranscript((prev) => [...prev, words[index]]);
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 400);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  // Simulate waveform animation
+  // Simulate waveform animation (replace with real audio visualization)
   useEffect(() => {
     const interval = setInterval(() => {
       setWaveform(Array(20).fill(0).map(() => Math.random()));

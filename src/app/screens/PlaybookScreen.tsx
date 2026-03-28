@@ -157,15 +157,15 @@ export function PlaybookScreen() {
 
           <div className="grid grid-cols-3 gap-4">
             <div>
-              <p className="text-white text-2xl mb-1">47</p>
+              <p className="text-white text-2xl mb-1">0</p>
               <p className="text-white/60 text-xs">Captures</p>
             </div>
             <div>
-              <p className="text-white text-2xl mb-1">89%</p>
+              <p className="text-white text-2xl mb-1">0%</p>
               <p className="text-white/60 text-xs">Completed</p>
             </div>
             <div>
-              <p className="text-white text-2xl mb-1">12</p>
+              <p className="text-white text-2xl mb-1">0</p>
               <p className="text-white/60 text-xs">Patterns</p>
             </div>
           </div>

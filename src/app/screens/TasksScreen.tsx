@@ -14,50 +14,9 @@ interface Task {
 
 export function TasksScreen() {
   const navigate = useNavigate();
-  const [tasks, setTasks] = useState<Task[]>([
-    {
-      id: "1",
-      text: "Call the client about project deadline",
-      category: "NOW",
-      completed: false,
-      timestamp: "2 min ago",
-    },
-    {
-      id: "2",
-      text: "Check if the reports are ready",
-      category: "NOW",
-      completed: false,
-      timestamp: "2 min ago",
-    },
-    {
-      id: "3",
-      text: "Remind Sarah about the meeting",
-      category: "NEXT",
-      completed: false,
-      timestamp: "2 min ago",
-    },
-    {
-      id: "4",
-      text: "Follow up on email responses",
-      category: "NEXT",
-      completed: true,
-      timestamp: "1 hour ago",
-    },
-    {
-      id: "5",
-      text: "Review quarterly goals",
-      category: "LATER",
-      completed: false,
-      timestamp: "3 hours ago",
-    },
-    {
-      id: "6",
-      text: "Schedule team retrospective",
-      category: "LATER",
-      completed: false,
-      timestamp: "3 hours ago",
-    },
-  ]);
+  
+  // Empty state - ready for real data from API/database
+  const [tasks, setTasks] = useState<Task[]>([]);
 
   const [filter, setFilter] = useState<"ALL" | "NOW" | "NEXT" | "LATER">("ALL");
 

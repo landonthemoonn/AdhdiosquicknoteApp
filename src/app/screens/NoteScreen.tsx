@@ -17,7 +17,7 @@ export function NoteScreen() {
 
   const handleSave = () => {
     if (note.trim()) {
-      // In a real app, save the note here
+      // TODO: Save the note to API/database here
       navigate("/tasks");
     }
   };
