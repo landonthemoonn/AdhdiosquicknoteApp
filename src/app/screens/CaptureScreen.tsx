@@ -1,7 +1,15 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
-import { Mic, FileText, Zap, Clock, Brain, ListChecks } from "lucide-react";
+import {
+  Mic,
+  FileText,
+  Zap,
+  Clock,
+  Brain,
+  ListChecks,
+  Camera,
+} from "lucide-react";
 import { BottomNav } from "../components/BottomNav";
 
 interface BloomOption {
@@ -30,12 +38,20 @@ export function CaptureScreen() {
       angle: 0,
     },
     {
+      id: "photo",
+      label: "Photo",
+      icon: Camera,
+      color: "from-cyan-600 to-blue-700",
+      route: "/photo",
+      angle: 51.43,
+    },
+    {
       id: "note",
       label: "Note",
       icon: FileText,
       color: "from-stone-600 to-amber-700",
       route: "/note?category=NOTE",
-      angle: 60,
+      angle: 102.86,
     },
     {
       id: "now",
@@ -43,7 +59,7 @@ export function CaptureScreen() {
       icon: Zap,
       color: "from-orange-600 to-red-700",
       route: "/note?category=NOW",
-      angle: 120,
+      angle: 154.29,
     },
     {
       id: "later",
@@ -51,7 +67,7 @@ export function CaptureScreen() {
       icon: Clock,
       color: "from-stone-500 to-stone-700",
       route: "/note?category=LATER",
-      angle: 180,
+      angle: 205.71,
     },
     {
       id: "brain",
@@ -59,7 +75,7 @@ export function CaptureScreen() {
       icon: Brain,
       color: "from-teal-700 to-emerald-800",
       route: "/note?category=BRAIN",
-      angle: 240,
+      angle: 257.14,
     },
     {
       id: "tasks",
@@ -67,7 +83,7 @@ export function CaptureScreen() {
       icon: ListChecks,
       color: "from-yellow-700 to-amber-800",
       route: "/tasks",
-      angle: 300,
+      angle: 308.57,
     },
   ];
 

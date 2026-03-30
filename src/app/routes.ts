@@ -6,6 +6,7 @@ import { ResultsScreen } from "./screens/ResultsScreen";
 import { ExpandedView } from "./screens/ExpandedView";
 import { TasksScreen } from "./screens/TasksScreen";
 import { PlaybookScreen } from "./screens/PlaybookScreen";
+import { PhotoScreen } from "./screens/PhotoScreen";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
   {
     path: "/note",
     Component: NoteScreen,
+  },
+  {
+    path: "/photo",
+    Component: PhotoScreen,
   },
   {
     path: "/results",
